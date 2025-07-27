@@ -2,6 +2,8 @@
 JobTrackr is a full-stack job tracking application where users can register, log in, and manage their job applications. 
 It provides a simple interface to add, update, and delete job entries, track status, and view statistics. 
 Built using the MERN stack with secure JWT authentication and MongoDB for persistent storage.
+
+
 🛠️ Tech Stack
 Frontend: React.js,TailwindCSS
 
