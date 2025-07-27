@@ -32,7 +32,7 @@ JWT_SECRET=your_super_secret_key
 
 🚀 How to Run the Project Locally
 Clone the repository:
-git clone https://github.com/your-username/jobtrackr.git
+git clone https:[//github.com/your-username/jobtrackr.git](https://github.com/Dasaridileep/Jobtracker.git)
 Set up Backend:
 
 
