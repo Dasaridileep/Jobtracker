@@ -1,48 +1,76 @@
-📌 JobTrackr
-JobTrackr is a full-stack job tracking application where users can register, log in, and manage their job applications. 
-It provides a simple interface to add, update, and delete job entries, track status, and view statistics. 
-Built using the MERN stack with secure JWT authentication and MongoDB for persistent storage.
+# 📌 JobTrackr
 
+**JobTrackr** is a full-stack job tracking web application that allows users to register, log in, and manage their job applications. It offers a clean, user-friendly interface to add, update, and delete job entries, track application statuses, and view helpful statistics. The app is built using the **MERN** stack with secure **JWT authentication** and **MongoDB Atlas** for cloud storage.
 
-🛠️ Tech Stack
-Frontend: React.js,TailwindCSS
+---
 
-Backend: Node.js, Express.js
+## 🛠️ Tech Stack
 
-Database: MongoDB (via MongoDB Atlas)
+- **Frontend**: React.js, TailwindCSS  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB (MongoDB Atlas)  
+- **Authentication**: JWT (JSON Web Token)  
 
-Authentication: JWT (JSON Web Token)
+---
 
-✨ Features
+## ✨ Features
 
-✅ User Registration & Login with secure JWT
+- ✅ User Registration & Login with secure JWT-based authentication  
+- 🔐 Protected Routes accessible only by authenticated users  
+- 📝 Add, Edit, and Delete job entries  
+- 📊 Visual job statistics (Applied, Interviewing, Rejected, etc.)  
+- ☁️ MongoDB Atlas used for cloud storage  
+- 💡 Clean and modern UI with responsive design  
 
-🔐 Protected Routes for authenticated users
+---
 
-📄 Add, Edit, Delete job entries
+## 🔐 Environment Variables (.env)
 
-📊 View job statistics (e.g., number of applied, pending, rejected)
+In the root of your backend directory, create a `.env` file and add the following:
 
-☁️ MongoDB Atlas used for cloud storage
-
-💡 Clean, modern UI built with React
-
-🔐 Environment Variables (.env)
-Create a .env file in the root of your backend with:
+```env
 MONGO_URI=your_mongo_db_connection_string
 JWT_SECRET=your_super_secret_key
 
 🚀 How to Run the Project Locally
-Clone the repository:
-git clone https:[//github.com/your-username/jobtrackr.git](https://github.com/Dasaridileep/Jobtracker.git)
-Set up Backend:
+1️⃣ Clone the Repository
 
+git clone https://github.com/your-username/jobtrackr.git
+2️⃣ Set Up the Backend
 
-cd server
+cd jobtrackr/server
 npm install
 npm start
-Set up Frontend:
+3️⃣ Set Up the Frontend
 
-cd client
+cd ../client
 npm install
 npm start
+📌 Folder Structure
+jobtrackr/
+│
+├── client/         # React frontend
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── App.js
+│
+├── server/         # Node.js + Express backend
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── server.js
+│
+└── README.md
+🧠 Future Scope
+
+🔍 Advanced filtering (e.g., by company, location, date applied)
+
+🤝 Integration with LinkedIn/Indeed APIs
+
+📧 Email reminders and follow-up alerts
+
+🛠️ Admin dashboard for recruiters
+
