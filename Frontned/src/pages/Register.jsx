@@ -29,7 +29,7 @@ const Register = () => {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', form);
+      await axios.post('https://jobtracker-1-0bdl.onrender.com/api/auth/register', userData);
       localStorage.setItem('token', res.data.token);
       navigate('/');
     } catch (err) {
